@@ -1143,7 +1143,7 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.
 
 [[package]]
 name = "pytest-asyncio"
-version = "0.17.2"
+version = "0.19.0"
 description = "Pytest support for asyncio"
 category = "main"
 optional = false
@@ -1153,7 +1153,7 @@ python-versions = ">=3.7"
 pytest = ">=6.1.0"
 
 [package.extras]
-testing = ["coverage (==6.2)", "hypothesis (>=5.7.1)", "flaky (>=3.5.0)", "mypy (==0.931)"]
+testing = ["coverage (>=6.2)", "hypothesis (>=5.7.1)", "flaky (>=3.5.0)", "mypy (>=0.931)", "pytest-trio (>=0.7.0)"]
 
 [[package]]
 name = "pytest-xprocess"
@@ -1551,7 +1551,7 @@ cli = ["typer", "ipython", "genpy", "black", "autoflake"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "135a7cde4b0ebd8fafd231cf549c95eb29e0f3cd49c23255bd627178de547410"
+content-hash = "66990b4d94851564fdad518997543a674888cbc7a2c81282111cd951e3d23938"
 
 [metadata.files]
 anyio = []
