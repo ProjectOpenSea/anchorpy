@@ -1,5 +1,35 @@
 # Changelog
 
+## [0.10.0] - 2022-08-11
+
+### Added
+
+- Added support for docs in IDLs [#(88)](https://github.com/kevinheavey/anchorpy/pull/88)
+- Add first-class support for `remaining_accounts` [#(83)](https://github.com/kevinheavey/anchorpy/pull/83)
+- Allow dynamically overriding `program_id` [#(83)](https://github.com/kevinheavey/anchorpy/pull/83)
+
+### Fixed
+
+- Fix identifiers clashing with Python keywords [#(87)](https://github.com/kevinheavey/anchorpy/pull/87)
+
+## [0.9.4] - 2022-07-18
+
+### Fixed
+
+Add missing BorshPubkey import in generated client types [#(81)](https://github.com/kevinheavey/anchorpy/pull/81)
+
+## [0.9.3] - 2022-07-06
+
+### Changed
+
+Use latest `solana-py` [#(78)](https://github.com/kevinheavey/anchorpy/pull/78)
+
+## [0.9.2] - 2022-06-02
+
+### Fixed
+
+- Handle empty structs in clientgen [#(75)](https://github.com/kevinheavey/anchorpy/pull/75)
+
 ## [0.9.1] - 2022-05-19
 
 ### Fixed
