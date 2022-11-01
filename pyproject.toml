@@ -1,55 +1,56 @@
 [tool.poetry]
-authors = ["kevinheavey <kevinheavey123@gmail.com>"]
-description = "The Python Anchor client."
-documentation = "https://kevinheavey.github.io/anchorpy/"
 name = "anchorpy"
+version = "0.12.0"
+description = "The Python Anchor client."
 readme = "README.md"
 repository = "https://github.com/kevinheavey/anchorpy"
-version = "0.10.0.dev1"
+documentation = "https://kevinheavey.github.io/anchorpy/"
+authors = ["kevinheavey <kevinheavey123@gmail.com>"]
 
 [tool.poetry.dependencies]
-apischema = "^0.17.5"
-autoflake = {version = "^1.4", optional = true}
-black = {version = "^22.3.0", optional = true}
-borsh-construct = "^0.1.0"
+python = "^3.9"
 construct-typing = "^0.5.1"
-genpy = {version = "^2021.1", optional = true}
-ipython = {version = "^8.0.1", optional = true}
+solana = "^0.27.2"
+borsh-construct = "^0.1.0"
+websockets = "^10.0"
+toolz = "^0.11.2"
 jsonrpcclient = "^4.0.1"
+zstandard = "^0.17.0"
+pytest = "7.1.2"
+pytest-xprocess = "^0.18.1"
+pytest-asyncio = "^0.19.0"
 more-itertools = "^8.11.0"
 pyheck = "^0.1.4"
-pytest = "7.1.2"
-pytest-asyncio = "^0.19.0"
-pytest-xprocess = "^0.18.1"
-python = "^3.9"
-solana = "^0.25.0"
-sumtypes = "^0.1a6"
-toolz = "^0.11.2"
-typer = {version = "0.4.1", optional = true}
-websockets = "^10.0"
-zstandard = "^0.17.0"
+typer = { version = "0.4.1", optional = true }
+ipython = { version = "^8.0.1", optional = true }
+genpy = {version = "^2021.1", optional = true }
+black = {version = "^22.3.0", optional = true }
+autoflake = { version = "^1.4", optional = true }
+based58 = "^0.1.1"
+anchorpy-core = "^0.1.2"
 
 [tool.poetry.extras]
 cli = ["typer", "ipython", "genpy", "black", "autoflake"]
+
 
 [tool.poetry.scripts]
 anchorpy = "anchorpy.cli:app"
 
 [tool.poetry.dev-dependencies]
-bandit = "1.7.2"
-bump2version = "^1.0.1"
+wemake-python-styleguide = "^0.16.0"
+mypy = "^0.982"
+pydocstyle = "^6.1.1"
 isort = "^5.9.3"
 jinja2 = "3.0.3"
 mkdocs-material = "^8.1.7"
-mkdocstrings = "^0.17.0"
-mypy = "^0.910"
-pydocstyle = "^6.1.1"
+bump2version = "^1.0.1"
 pyserum = "^0.5.0-alpha.0"
-wemake-python-styleguide = "^0.16.0"
+mkdocstrings = "^0.17.0"
+bandit = "1.7.2"
 
 [tool.poetry.plugins.pytest11]
 pytest_anchorpy = "anchorpy.pytest_plugin"
 
 [build-system]
-build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
