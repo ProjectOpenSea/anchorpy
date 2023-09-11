@@ -15,7 +15,6 @@ from anchorpy.program.context import Context
 from anchorpy.program.namespace.account import AccountClient, ProgramAccount
 from anchorpy.program.event import EventParser
 from anchorpy.program.namespace.simulate import SimulateResponse
-from anchorpy.pytest_plugin import localnet_fixture, workspace_fixture
 from anchorpy import error, utils
 
 __all__ = [

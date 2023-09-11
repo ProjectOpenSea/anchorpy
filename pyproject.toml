@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "anchorpy"
-version = "0.12.0-dev2"
+version = "0.12.0-dev3"
 description = "The Python Anchor client."
 readme = "README.md"
 repository = "https://github.com/kevinheavey/anchorpy"
@@ -43,13 +43,7 @@ bump2version = "^1.0.1"
 pyserum = "^0.5.0-alpha.0"
 mkdocstrings = "^0.17.0"
 bandit = "1.7.2"
-pytest = "7.1.2"
-pytest-xprocess = "^0.18.1"
-pytest-asyncio = "^0.19.0"
 black = {version = "^22.3.0", optional = true }
-
-[tool.poetry.plugins.pytest11]
-pytest_anchorpy = "anchorpy.pytest_plugin"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
